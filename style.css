@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh; /* ocupar 100% do viewport-height*/
+    box-sizing: border-box;
+    background-color: #250902; /*fundo da página*/
+    color: #ffffff; /*cor do texto*/
+}
+
+.titulo-destaque {
+    color: #800e13;
+}
+
+.conteudo {
+    margin: 10% 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo__texto {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* espaçamento entre cada elemento */
+}
+
+.conteudo__texto__titulo {
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+}
+
+.conteudo__texto__pagrafo {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.conteudo__ancoras {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo__ancoras__botoes {
+    background-color:#800e13;
+    width: 280px;
+    padding: 21.5px 0; /*distância entre conteudo e borda. Primeiro valor vertical e segundo horizontal*/
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px; 
+    font-family: "Montserrat", sans-serif;
+    font-weight: 750;
+    text-decoration: none; /*tirando estilo de hiperlink com barra embaixo*/
+    color: #ffffff; 
+}
+
+.conteudo__img {
+    border-radius: 12px;
+    box-shadow: 10px -8px 10px #800e13;
+}
+
+#prece_gif {
+  display: none; /* o GIF começa escondido */
+  margin-top: 20px;
+}
