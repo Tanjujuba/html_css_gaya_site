@@ -2,10 +2,10 @@ let botaoPrece = document.getElementById('conteudo__ancoras__botoes')
 let imgGaya = document.getElementById('conteudo__img')
 
 botaoPrece.addEventListener('click', () => {
-    imgGaya.src = 'gaya-eating.gif';
+    imgGaya.src = './img/gaya-eating.gif';
 
     setTimeout(() => {
-    imgGaya.src = 'gaya.png';
+    imgGaya.src = './img/gaya.png';
     alert('Hmmm! Arigatowwwww!');
     }, 3000);
 
