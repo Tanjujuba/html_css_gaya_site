@@ -6,6 +6,7 @@ botaoPrece.addEventListener('click', () => {
 
     setTimeout(() => {
     imgGaya.src = 'gaya.png';
+    alert('Hmmm! Arigatowwwww!');
     }, 3000);
 
 } );
