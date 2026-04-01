@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #800e13;
+    --cor-terciaria: #250902;
+    --cor-branca: #ffffff;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh;  */
+    box-sizing: border-box;
+    background-color: var(--cor-terciaria); /*fundo da página*/
+    color: var(--cor-branca); /*cor do texto*/
+}
+
+.titulo-destaque {
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 12%; /*top right bottom left*/
+}
+
+.cabecalho_menu {
+    display: flex; /* elemento pai dos filhos que eu quero configurar posicao */
+    gap: 80px; /* espaçamento entre os elementos filhos */
+    text-align: center;
+}
+
+.cabecalho_menu_link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.conteudo {
+    /* margin: 5% 15%; antigo*/
+    padding: 12% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 62px;
+}
+
+.conteudo__texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* espaçamento entre cada elemento */
+    align-items: center;
+}
+
+.conteudo__texto__titulo {
+    /* font-size: 36px; */
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.conteudo__texto__pagrafo {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+}
+
+.conteudo__ancoras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.conteudo__ancoras__subtitulo {
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+}
+
+.conteudo__ancoras__botoes {
+    all: unset; /* remove todos os estilos padrões do botão */
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    border: 3.5px solid var(--cor-secundaria); /* solid é o formato da borda, podendo ter pontilhado por ex */
+    width: 75%;
+    background-color: var(--cor-terciaria);
+    padding: 21.5px 0; /*distância entre conteudo e borda. Primeiro valor vertical e segundo horizontal*/
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem; 
+    font-family: var(--fonte-secundaria);
+    font-weight: 750;
+    text-decoration: none; /*tirando estilo de hiperlink com barra embaixo*/
+    color: var(--cor-branca); 
+    transition: 0.3s;
+}
+
+.conteudo__ancoras__botoes:hover {
+    background-color: #50070b;
+    padding: 3%;
+    
+}
+
+.conteudo__img {
+    border-radius: 12px;
+    box-shadow: 10px -8px 10px var(--cor-secundaria);
+    width: 50%;
+}
+
+.rodape {
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    padding: 15px;
+    background-color: var(--cor-secundaria);
+}
+
+@media (max-width: 800px) {
+   .cabecalho {
+     padding: 6%;
+   }
+   .cabecalho_menu {
+     justify-content: center;
+   }
+   .conteudo {
+		flex-direction: column-reverse;
+        padding: 2%;
+   }
+
+   .conteudo_texto {
+        width: auto;
+   }
+
+}
